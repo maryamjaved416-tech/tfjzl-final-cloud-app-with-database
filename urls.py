@@ -4,8 +4,8 @@ from . import views
 app_name = 'coursequiz'
 
 urlpatterns = [
-    # tumhare baaki paths yahan...
+    # baaki ke paths...
     
-    path('submit/<int:course_id>/', views.submit, name='submit'),
-    path('result/<int:course_id>/<int:submission_id>/', views.show_exam_result, name='show_exam_result'),
+    path('<int:course_id>/submit/', views.submit, name='submit'),
+    path('<int:course_id>/submission/<int:submission_id>/result/', views.show_exam_result, name='show_exam_result'),
 ]
