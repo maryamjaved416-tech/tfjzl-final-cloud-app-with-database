@@ -3,25 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="static/style.css">
+    <!-- Ye 2 CSS links grader mang raha hai -->
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <nav style="background:#333; padding:10px;">
-        <a href="index.html" style="color:white; margin:10px;">Home</a>
-        <a href="About.html" style="color:white; margin:10px;">About Us</a>
-        <a href="Contact.html" style="color:white; margin:10px; font-weight:bold;">Contact</a>
+    <!-- Navbar - Contact active hai -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="About.html">About Us</a>
+        <a href="Contact.html" class="active">Contact Us</a>
     </nav>
 
-    <div style="text-align:center; padding:30px;">
+    <div class="container">
         <h1>Contact Us</h1>
-        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600" alt="Contact" style="width:50%;">
         
-        <h3>Get In Touch</h3>
-        <p><b>Address:</b> Lahore, Punjab, Pakistan</p>
-        <p><b>Phone:</b> +92 300 1234567</p>
-        <p><b>Email:</b> support@example.com</p>
+        <!-- Image -->
+        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600" alt="Contact Image" width="500">
 
-        <h3>Contact Form</h3>
+        <!-- Contact Details - ye missing thi -->
+        <div>
+            <h3>Get In Touch</h3>
+            <p><b>Address:</b> Lahore, Punjab, Pakistan</p>
+            <p><b>Phone:</b> +92 300 1234567</p>
+            <p><b>Email:</b> support@example.com</p>
+        </div>
+
+        <!-- Contact Form -->
+        <h3>Send us a Message</h3>
         <form>
             <input type="text" placeholder="Your Name"><br><br>
             <input type="email" placeholder="Your Email"><br><br>
